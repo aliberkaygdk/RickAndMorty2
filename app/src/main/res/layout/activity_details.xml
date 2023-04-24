@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_marginBottom="20dp"
+        android:background="@color/white">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:src="@drawable/ic_back"
+
+                />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_toEndOf="@+id/back"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_below="@+id/topbar"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp" />
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/image"
+    android:columnCount="2"
+    android:rowCount="7"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp">
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Status:"
+        android:textSize="22sp"
+       ></TextView>
+
+    <TextView
+        android:fontFamily="@font/montserrat"
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusText"
+        android:textSize="22sp"
+
+        ></TextView>
+    <TextView
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Specy:"
+        android:textSize="22sp"
+       >
+
+        ></TextView>
+    <TextView
+        android:fontFamily="@font/montserrat"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textSize="22sp"
+        android:id="@+id/specyText"
+
+
+        ></TextView>
+    <TextView
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Gender:"
+        android:textSize="22sp"
+        >
+        </TextView>
+    <TextView
+        android:fontFamily="@font/montserrat"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textSize="22sp"
+        android:id="@+id/genderText"
+
+
+        ></TextView>
+    <TextView
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Origin:"
+        android:textSize="22sp"
+        >
+        ></TextView>
+
+    <TextView
+        android:id="@+id/originText"
+
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textSize="22sp"
+
+
+        ></TextView>
+    <TextView
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Location:"
+        android:textSize="22sp"
+       >
+
+        </TextView>
+    <TextView
+        android:fontFamily="@font/montserrat"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="22sp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/locationText"
+
+        ></TextView>
+    <TextView
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="5dp"
+    android:text="Episodes:"
+    android:textSize="22sp"
+    >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/episodesText"
+
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textSize="22sp"
+
+        ></TextView>
+    <TextView
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:text="Created at (in API):"
+    android:textSize="22sp"
+
+        android:fontFamily="@font/montserrat_bold"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/createdText"
+        android:layout_width="208dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textSize="22sp"
+
+
+        ></TextView>
+</GridLayout>
+
+</RelativeLayout>
